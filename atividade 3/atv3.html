@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Página</title>
+    <style>
+        .status{
+            display: flex;
+            justify-content: space-between;
+        }
+        .stt{
+            display: flex;
+            justify-content: space-between;
+        }
+        .doc{
+            display: flex;
+            align-items: center;
+        }
+        .pt{
+            display: flex;
+            justify-content: space-around;
+        }
+        .br{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+        <fieldset id="fieldset" style="width: 60%;">
+        <h4>Manutenção do Órgão colegiado</h4>
+
+        <br>
+
+        <table border="1" align="center">
+            <tr>
+                <th style="background-color: azure;">Unidade</th>
+                <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+            </tr>
+            <tr>
+                <th style="background-color: azure;" rowspan="5">Tipo Colegiado</th>
+                <td>CONGREGAÇÃO</td>
+            </tr>
+
+        </table>
+
+        <h4 style="background-color: azure;">Órgão Colegiado</h4>
+        
+        <form method="POST">
+            <label class="br" for="name">Nome</label>
+            <input style="width: 60%;" type="text" id="name" name="name">
+            <br><br>
+        <div class="status">
+            <div>
+            <label class="br" for="sigla">Sigla</label>
+            <input class="a" style="width: 40%;" type="text" id="name" name="name">
+            </div>
+        <div>
+            <label for="status">Status</label>
+            <select style="width: 55%;" name="ATIVADO" id="ATIVADO">
+                <option value="ATIVADO">ATIVADO</option>
+                <option value="DESATIVADO">DESATIVADO</option>
+            </select>
+        </div>
+        </div>
+            <br>
+        <div class="stt">
+        <div>           
+            <label class="br" for="data">Data de Ativação</label>
+            <input class="a" type="date" id="data" name="data">
+        </div> 
+        <div>
+            <label for="data">Data de desativação</label>
+            <input type="date" id="data" name="data">
+        </div>
+        </div>
+        <br>
+        <div id="orgaos">
+            <label class="br" for="Órgão de Origem">Órgão de Origem</label>
+            <input style="width: 60%;" type="text" name="name" id="name">
+            <input type="button" id="buscar" value="Buscar">
+            <br><br>
+            <label  for="Órgão Superior">Órgão Superior</label>
+            <input style="width: 60%;" type="text" id="name" name="name">
+            <input type="button" id="Buscar" value="Buscar">
+        </div>
+            <br><br>
+    <div class="doc">
+        <label class="br" for="doc">Documentação</label>
+        <textarea name="doc" id="doc" cols="60" rows="5"></textarea>
+    </div> 
+    <br>
+    <div class="pt">
+        <input type="submit" id="salvar" value="Salvar">
+        <input type="submit" id="excluir" value="Excluir">
+    </div>
+        </form>
+
+</body>
+</html>
